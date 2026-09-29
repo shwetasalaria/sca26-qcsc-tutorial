@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#PBS -q short-c
+#PBS -l select=1:mpiprocs=4:ompthreads=8
+#PBS -l walltime=04:00:00
+#PBS -W group_list=group1
+#PBS -o <TMPDIR>/output.out
+#PBS -e <TMPDIR>/output.err
+
+cd <TMPDIR>
+
+mpiexec.hydra /path/to/executable/a.out

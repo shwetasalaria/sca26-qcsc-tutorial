@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#PBS -q debug-c
+#PBS -l select=1
+#PBS -l walltime=30:00
+#PBS -W group_list=group1
+#PBS -o <TMPDIR>/output.out
+#PBS -e <TMPDIR>/output.err
+
+cd <TMPDIR>
+
+/path/to/executable/a.out
