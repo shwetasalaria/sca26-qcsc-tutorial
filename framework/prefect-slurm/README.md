@@ -275,7 +275,7 @@ Now we write a Prefect block to run the quantum sampling task:
 
 ### Step 6.1 Define `task-runner` block type
 
-In this step, we define a Block Type (“task-counter”) in Python.
+In this step, we define a Block Type (`task-runner`) in Python.
 This is the template/schema that tells Prefect what fields the block has and how it runs quantum job on quantum computer.
 
 Register the block schema from a file:
